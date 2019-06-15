@@ -23,9 +23,17 @@ class S(BaseHTTPRequestHandler):
         self.end_headers()
 
     def do_GET(self):
-        file1 = open("data.txt", "r+")
+        file1 = open("data.txt", "r")
         self._set_headers()
         data = file1.read()
+        file1.close() 
+                
+        first = data.find("!")
+        second = data.find("!", first+1)
+        data = data[first:second+1]
+
+        file1 = open("data.txt", "w")
+        file1.write(data)
         self.wfile.write(data)
         file1.close() 
         print(data)
@@ -33,16 +41,31 @@ class S(BaseHTTPRequestHandler):
         self._set_headers()
         
     def do_POST(self):
-        # Doesn't do anything with posted data
-        file1 = open("data.txt", "r+")
-        content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
-        post_data = self.rfile.read(content_length) # <--- Gets the data itsel
-        data=post_data
+        
+        file1 = open("data.txt", "r")
+                      
+        data = file1.read()
+        first = data.find("!")
+        second = data.find("!", first+1)
+        data = data[first:second+1]
+        file1.close()
+
+        lengthOfIncomingData = int(self.headers['Content-Length'])
+        incomingData = self.rfile.read(lengthOfIncomingData)
+        paramToLookFor = incomingData[0:incomingData.find("=")]
+        newValueOfParam = incomingData[incomingData.find("="): incomingData.find(";")]
+        
+        indexOfData = data.find(paramToLookFor)+len(paramToLookFor)
+        data = data[:indexOfData] + newValueOfParam  +data[data.find(";",indexOfData):]
+               
         print(data)
+        file1 = open("data.txt", "w")
         file1.write(data)
         self._set_headers()
-        self.wfile.write(post_data)
+        self.wfile.write(data)
         file1.close()
+
+
 def run(server_class=HTTPServer, handler_class=S, port=23654):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
