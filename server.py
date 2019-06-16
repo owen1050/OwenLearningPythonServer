@@ -13,6 +13,7 @@ Send a POST request::
 """
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 import SocketServer
+from termcolor import colored
 data = " "
 class S(BaseHTTPRequestHandler):
     
@@ -49,16 +50,36 @@ class S(BaseHTTPRequestHandler):
         second = data.find("!", first+1)
         data = data[first:second+1]
         file1.close()
+        
+        
 
         lengthOfIncomingData = int(self.headers['Content-Length'])
         incomingData = self.rfile.read(lengthOfIncomingData)
+        print(colored(incomingData,'yellow'))
         paramToLookFor = incomingData[0:incomingData.find("=")]
         newValueOfParam = incomingData[incomingData.find("="): incomingData.find(";")]
         
         indexOfData = data.find(paramToLookFor)+len(paramToLookFor)
-        data = data[:indexOfData] + newValueOfParam  +data[data.find(";",indexOfData):]
-               
-        print(data)
+        
+        if indexOfData-len(paramToLookFor) >= 0:
+            data = data[:indexOfData] + newValueOfParam  +data[data.find(";",indexOfData):]
+            print(colored("Found param, updating",'yellow')) 
+        if incomingData.find("RESET")>=0:
+            data = "!BlindState=0;BlindPos=0;!"
+            print(colored("RESETING",'red'))
+        if incomingData.find("FLIRT")>=0:
+            data = "Sam Young is beautiful and brilliant"
+            print(colored("INITIATE FLIRTTING",'red'))
+                
+        if incomingData.find("ADDPARAM")>=0:
+            paramToAdd = incomingData[:incomingData.find(";")+1]
+            check = paramToAdd[:paramToAdd.find("=")]
+            if data.find(check) == -1:
+                data = "!" + paramToAdd + data[1:]
+                print(colored("ADDED PARAM" + check,'red'))
+        
+        
+        print(colored(data,'red'))
         file1 = open("data.txt", "w")
         file1.write(data)
         self._set_headers()

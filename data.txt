@@ -1,1 +1,1 @@
-!BlindState=-1;BlindPos=255;!
+!BlindMotion=1;BlindState=0;BlindPos=0;!
