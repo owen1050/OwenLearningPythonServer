@@ -65,7 +65,7 @@ class S(BaseHTTPRequestHandler):
             data = data[:indexOfData] + newValueOfParam  +data[data.find(";",indexOfData):]
             print(colored("Found param, updating",'yellow')) 
         if incomingData.find("RESET")>=0:
-            data = "!BlindState=0;BlindPos=0;!"
+            data = "!BothLightsMotion=-1;LightsMotion=0;HallMotion=0;MainMotion=0;HallState=0;MainState=55;BlindMotion=-1;BlindState=0;BlindPos=0;!"
             print(colored("RESETING",'red'))
         if incomingData.find("FLIRT")>=0:
             data = "Sam Young is beautiful and brilliant"
@@ -76,8 +76,14 @@ class S(BaseHTTPRequestHandler):
             check = paramToAdd[:paramToAdd.find("=")]
             if data.find(check) == -1:
                 data = "!" + paramToAdd + data[1:]
-                print(colored("ADDED PARAM" + check,'red'))
+                print(colored("ADDED PARAM:" + check,'red'))
         
+        if incomingData.find("REMOVEPARAM")>=0:
+            paramToRemove = incomingData[:incomingData.find("=")]
+            low = data.find(paramToRemove)
+            if low > -1:
+                data =data[:low]+ data[data.find(";",low)+1:]
+                print(colored("REMOVED:" + paramToRemove,'red'))
         
         print(colored(data,'red'))
         file1 = open("data.txt", "w")
