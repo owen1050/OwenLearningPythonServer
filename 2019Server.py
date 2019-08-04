@@ -35,9 +35,12 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             highVI = int(inData.find(";"))
             toValue = int(inData[lowVI:highVI]
             if varToChange in fileCont:
-                
+                vStartI = fileCont.find(varToChange)
+                lowVI = fileCont.find("=", vStartI)
+                highVI = fileCont.find(";". lowVI)
+
             else:
-                retString = "var not known, use add:[var]=[value] to add
+                retString = "var not known, use add:[var]=[value] to add"
         
         
         
