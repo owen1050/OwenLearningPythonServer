@@ -1,0 +1,2 @@
+!blindsDown=0!
+!blindsUp=1!
