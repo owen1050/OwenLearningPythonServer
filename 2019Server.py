@@ -54,6 +54,17 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             else:
                 retString = "Var not found, adding: " + varToChange
                 fileCont = fileCont + "!" + varToChange + "=" + str(toValue) + "!"
+        
+            if "multipleChange:" in inData:
+                lowVI = inData.find("multipleChanges:")+4
+                highVI =int(inData.find("=", lowVI)) 
+                varToChange = inData[lowVI:highVI]
+                lowVI = highVI+1
+                highVI = int(inData.find(";"))
+                toValue = int(inData[lowVI:highVI])
+                if varToChange == "bothLights":
+                    #make fucntion which changes 
+        
         f.write(fileCont)
         f.close()
         
