@@ -4,10 +4,7 @@ return_if_changed - returns entire data file if there is ANY change
 set:[VAR]=[VALUE];
 	adds if not exist
 	returns sent string if sucess
-
-
+multipleChange:[bigVar]=[value];
 data.txt will be ![var]=[value]![var]=[value]!
 
-right now, server will take webhook from iftt and convert those to changes in data.txt. arduino will read those changes and update all internal variables. state machines will take effect and vars will be updated when actions are completed. 
 
-blindsDown was 0 now 1, go to go blinds down, when blinds down, set blinds down to 0

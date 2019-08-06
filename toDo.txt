@@ -1,0 +1,7 @@
+when boot, iftt trigger texts to owen will nick
+arduino
+	poll "any change" every 0.05 seconds. if chagne update all vars, and kick state machines into action. take careful consideration into state machine as it cant get sloppy. record IR values for all the new buttons on tv and proj
+adnroid
+	upodate the app widget and all functions in real app
+iftt 
+	all voice commands - maybe do at same time as app

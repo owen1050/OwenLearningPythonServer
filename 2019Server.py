@@ -28,7 +28,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         cL = int(self.headers['content-length'])
         inData = self.rfile.read(cL)
         inData = urllib.parse.unquote(str(inData))
-        
+        print(inData)        
         retString = "No Action"
 
         if "return_if_changed" in inData:
@@ -55,16 +55,23 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 retString = "Var not found, adding: " + varToChange
                 fileCont = fileCont + "!" + varToChange + "=" + str(toValue) + "!"
         
-            if "multipleChange:" in inData:
-                lowVI = inData.find("multipleChanges:")+4
-                highVI =int(inData.find("=", lowVI)) 
-                varToChange = inData[lowVI:highVI]
-                lowVI = highVI+1
-                highVI = int(inData.find(";"))
-                toValue = int(inData[lowVI:highVI])
-                if varToChange == "bothLights":
-                    #make fucntion which changes 
-                    pass 
+        if "multipleChange:" in inData:
+            print("multipleChangeFound")
+            lowVI = inData.find("multipleChange:")+15
+            highVI =int(inData.find("=", lowVI)) 
+            varToChange = inData[lowVI:highVI]
+            lowVI = highVI+1
+            highVI = int(inData.find(";"))
+            toValue = int(inData[lowVI:highVI])
+            if varToChange == "bothLights":
+                if toValue == 1:
+                    fileCont = setVar(fileCont, "mainLightOn", 1)
+                    fileCont = setVar(fileCont, "hallLightOn", 1)
+                if toValue == 0:
+                    fileCont = setVar(fileCont, "mainLightOff", 1)
+                    fileCont = setVar(fileCont, "hallLightOff", 1)
+            retString = "Changed all vars asscoiated with " + varToChange
+        
         f.write(fileCont)
         f.close()
         print("Returned:" + retString)
@@ -73,8 +80,24 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         rq.close()
         
         self.wfile.write(retString.encode())
+        checkBigComm()
         return
  
+def checkBigComm():
+    pass
+
+def getVar(s, var):
+    vStartI = s.find(var)
+    lowVI = 1 + s.find("=", vStartI)
+    highVI = s.find("!", lowVI)
+    return int(s[lowVI:highVI])
+
+def setVar(s,var, val):
+    vStartI = s.find(var)
+    lowVI = s.find("=", vStartI)
+    highVI = s.find("!", lowVI)
+    return s[:lowVI+1]+str(val)+s[highVI:]
+
 def run():
     global prevSentString, reqCount
     print('starting server...')
