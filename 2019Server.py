@@ -15,7 +15,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         global prevSentString, reqCount
         reqCount = reqCount + 1
-        print(reqCount)
+        print("RequestNumber:"+ str(reqCount))
         self.send_response(200)
         self.send_header('Content-type','text/plain')
         self.end_headers()
@@ -64,9 +64,13 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 toValue = int(inData[lowVI:highVI])
                 if varToChange == "bothLights":
                     #make fucntion which changes 
-        
+                    pass 
         f.write(fileCont)
         f.close()
+        print("Returned:" + retString)
+        rq = open("reqCount.txt", "w+")
+        rq.write(str(reqCount))
+        rq.close()
         
         self.wfile.write(retString.encode())
         return
@@ -75,7 +79,14 @@ def run():
     global prevSentString, reqCount
     print('starting server...')
     prevSentString = ""
-    reqCount = 0 
+    rq = open("reqCount.txt","r")
+    reqCount = int(rq.read())
+    rq.close()
+    p = open("perm.txt", "r+")
+    d = open("data.txt","w+")
+    d.write(p.read())
+    p.close()
+    d.read()
     server_address = ('',23654)
     httpd = HTTPServer(server_address, testHTTPServer_RequestHandler)
     print('running server...')
@@ -85,5 +96,5 @@ def run():
     except:
         httpd.shutdown()
         print("Shutdown server")
- 
+        
 run()
