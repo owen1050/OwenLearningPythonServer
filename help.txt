@@ -1,11 +1,18 @@
-This is owens HTTP ICD. 
-
-return_if_changed - returns entire data file if there is ANY change
+return_if_changed 
 set:[VAR]=[VALUE];
 	adds if not exist
 	returns sent string if sucess
 multipleChange:[bigVar]=[value];
+	bigVar = bothLights[0/1]
+		goodMorning
+		goodnight
+		set_tv
+		set_projector
+
+
 sudo_reset
+help
+return_all
 data.txt will be ![var]=[value]![var]=[value]!
 
 

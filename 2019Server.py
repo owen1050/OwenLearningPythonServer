@@ -1,4 +1,3 @@
-
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import urllib 
 
@@ -28,7 +27,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         cL = int(self.headers['content-length'])
         inData = self.rfile.read(cL)
         inData = urllib.parse.unquote(str(inData))
-        print(inData)        
+        print("POST Request:"+inData)
         retString = "No Action"
 
         if "return_if_changed" in inData:
@@ -37,7 +36,11 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             else:
                 retString = fileCont
                 prevSentString = fileCont
-        
+        if "sudo_reset" in inData:
+            p = open("perm.txt", "r+")
+            retString = "reset data to default"
+            fileCont = p.read()
+            p.close()
         if "set:" in inData:
             lowVI = inData.find("set:")+4
             highVI =int(inData.find("=", lowVI)) 
@@ -70,8 +73,42 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 if toValue == 0:
                     fileCont = setVar(fileCont, "mainLightOff", 1)
                     fileCont = setVar(fileCont, "hallLightOff", 1)
+            
+            if varToChange == "goodMorning":
+                fileCont = setVar(fileCont, "mainLightOn", 1)
+                fileCont = setVar(fileCont, "hallLightOn", 1)
+                fileCont = setVar(fileCont, "blindMoveAllUp", 1)
+
+            if varToChange == "goodnight":
+                fileCont = setVar(fileCont, "mainLightOff", 1)
+                fileCont = setVar(fileCont, "hallLightOff", 1)
+                fileCont = setVar(fileCont, "blindMoveAllDown", 1)
+            
+            if varToChange == "set_projector":
+                fileCont = setVar(fileCont, "mainLightOff", 1)
+                fileCont = setVar(fileCont, "hallLightOff", 1)
+                fileCont = setVar(fileCont, "blindMoveAllDown", 1)
+                fileCont = setVar(fileCont, "speakerInProj", 1)
+                fileCont = setVar(fileCont, "projectorOn", 1)
+
+
+            if varToChange == "set_tv":
+                fileCont = setVar(fileCont, "mainLightOff", 1)
+                fileCont = setVar(fileCont, "hallLightOff", 1)
+                fileCont = setVar(fileCont, "blindMoveAllDown", 1)
+                fileCont = setVar(fileCont, "speakerInTV", 1)
+                fileCont = setVar(fileCont, "tvOn", 1)
+      
+            
             retString = "Changed all vars asscoiated with " + varToChange
+        if "help" in inData:
+            h = open("help.txt", "r+")
+            retString = h.read()
+            h.close()
         
+        if "return_all" in inData:
+            retString = fileCont
+                   
         f.write(fileCont)
         f.close()
         print("Returned:" + retString)
@@ -80,12 +117,8 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         rq.close()
         
         self.wfile.write(retString.encode())
-        checkBigComm()
         return
  
-def checkBigComm():
-    pass
-
 def getVar(s, var):
     vStartI = s.find(var)
     lowVI = 1 + s.find("=", vStartI)
@@ -96,28 +129,28 @@ def setVar(s,var, val):
     vStartI = s.find(var)
     lowVI = s.find("=", vStartI)
     highVI = s.find("!", lowVI)
-    return s[:lowVI+1]+str(val)+s[highVI:]
+    a = s[:lowVI+1]+str(val)+s[highVI:]
+    return a
 
 def run():
     global prevSentString, reqCount
     print('starting server...')
-    prevSentString = ""
-    rq = open("reqCount.txt","r")
-    reqCount = int(rq.read())
-    rq.close()
-    p = open("perm.txt", "r+")
-    d = open("data.txt","w+")
-    d.write(p.read())
-    p.close()
-    d.read()
-    server_address = ('',23654)
-    httpd = HTTPServer(server_address, testHTTPServer_RequestHandler)
-    print('running server...')
-  
-    try:
-        httpd.serve_forever()
-    except:
-        httpd.shutdown()
-        print("Shutdown server")
-        
-run()
+    prevSentString = ""     
+    rq = open("reqCount.txt","r")     
+    reqCount = int(rq.read())     
+    rq.close()     
+    p = open("perm.txt", "r+")     
+    d = open("data.txt","w+")     
+    d.write(p.read())     
+    p.close()     
+    d.read()     
+    server_address = ('',23654)     
+    httpd = HTTPServer(server_address, testHTTPServer_RequestHandler)     
+    print('running server...')        
+    try:         
+        httpd.serve_forever()     
+    except:         
+        httpd.shutdown()         
+        print("Shutdown server")          
+run()    
+
