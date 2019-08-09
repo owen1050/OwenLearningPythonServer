@@ -1,1 +1,2 @@
-print("heyllo wmatyersfdasf dsa"[6:])
+import datetime
+print(str(datetime.datetime.now()))
