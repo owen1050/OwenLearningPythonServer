@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import urllib 
-
+import urllib
+import os
 # HTTPRequestHandler class
 class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     prevSentString = ""
@@ -14,7 +14,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     def do_POST(self):
         global prevSentString, reqCount
         reqCount = reqCount + 1
-        print("RequestNumber:"+ str(reqCount))
+        print("//////////////////////////////\nRequestNumber:"+ str(reqCount))
         self.send_response(200)
         self.send_header('Content-type','text/plain')
         self.end_headers()
@@ -30,6 +30,23 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         print("POST Request:"+inData)
         retString = "No Action"
 
+        if "sch:" in inData:
+            
+            lowVI = inData.find("sch:")+4
+            highVI = int(inData.find("@"))
+            comToDo = inData[lowVI:highVI]
+            lowVI = int(highVI + 1)
+            highVI = int(inData.find(";", lowVI))
+            timeInt = int(inData[lowVI:highVI])
+            retString = "Scheduled "+comToDo+" at "+str(timeInt)
+            inData = ""
+            scFile = open("timeExec.txt", "a+")
+            
+            minute = int(timeInt % 100)
+            hour = int((timeInt - minute)/100)
+            scFile.write("time~["+str(hour)+":"+str(minute)+"]="+comToDo + "?")
+            scFile.close()
+
         if "return_if_changed" in inData:
             if prevSentString == fileCont:
                 retString = "no_change"
@@ -41,6 +58,13 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             retString = "reset data to default"
             fileCont = p.read()
             p.close()
+
+        if "sudo_reboot" in inData:
+            passw = "adminadmin"
+            com = "reboot"
+            p = os.system("echo %s|sudo -S %s" %(passw, com))
+        
+
         if "set:" in inData:
             lowVI = inData.find("set:")+4
             highVI =int(inData.find("=", lowVI)) 
@@ -90,7 +114,6 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 fileCont = setVar(fileCont, "blindMoveAllDown", 1)
                 fileCont = setVar(fileCont, "speakerInProj", 1)
                 fileCont = setVar(fileCont, "projectorOn", 1)
-
 
             if varToChange == "set_tv":
                 fileCont = setVar(fileCont, "mainLightOff", 1)

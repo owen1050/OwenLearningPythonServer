@@ -8,8 +8,8 @@ multipleChange:[bigVar]=[value];
 		goodnight
 		set_tv
 		set_projector
-
-
+sch:[COMMAND]@hhmm
+sudo_reboot
 sudo_reset
 help
 return_all
