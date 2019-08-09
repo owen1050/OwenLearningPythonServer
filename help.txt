@@ -9,6 +9,8 @@ multipleChange:[bigVar]=[value];
 		set_tv
 		set_projector
 sch:[COMMAND]@hhmm
+unsch:[command]@hhmm
+unsch:all
 sudo_reboot
 sudo_reset
 help
