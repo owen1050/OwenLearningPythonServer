@@ -1,4 +1,3 @@
-check when boot call-monitor time exec thing
 arduino
 	poll "any change" every 0.05 seconds. if chagne update all vars, and kick state machines into action. take careful consideration into state machine as it cant get sloppy. record IR values for all the new buttons on tv and proj
 adnroid
