@@ -3,7 +3,7 @@ import datetime
 from requests import post
 import pytz
 
-url = "http://owenserver.us.to:23654"
+url = "http://auto.owenbusler.com"
 fmt = "%H:%M"
 est = pytz.timezone("US/Eastern") 
 tf = open("bootTimes.txt", "a+")

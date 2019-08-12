@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "worked">~/test.txt 
+sudo su - sadmin -c "screen -dmS owenServer ~/startServer"
+sudo su - sadmin -c "screen -dmS ipMonitor ~/startMonitor"
+sudo su - sadmin -c "screen -dmS timeExecMon ~/startTimeExe"
+exit 0
