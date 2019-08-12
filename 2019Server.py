@@ -1,6 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import urllib
 import os
+import time
 # HTTPRequestHandler class
 class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     prevSentString = ""
@@ -13,8 +14,10 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         self.wfile.write("This is a server up get test".encode())
     def do_POST(self):
         global prevSentString, reqCount
+        logF = open("logs.txt", "a+")
         reqCount = reqCount + 1
         print("//////////////////////////////\nRequestNumber:"+ str(reqCount))
+        logF.write("=============================\nRequestNumber:"+str(reqCount)+"\n")
         self.send_response(200)
         self.send_header('Content-type','text/plain')
         self.end_headers()
@@ -28,6 +31,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         inData = self.rfile.read(cL)
         inData = urllib.parse.unquote(str(inData))
         print("POST Request:"+inData)
+        logF.write("Request:"+inData+"\n")
         retString = "No Action"
 
         if "sch:" in inData:
@@ -135,6 +139,9 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         f.write(fileCont)
         f.close()
         print("Returned:" + retString)
+        logF.write("Returned:"+retString+"\n")
+        logF.write(str(time.time())+"\n")
+        logF.close()
         rq = open("reqCount.txt", "w+")
         rq.write(str(reqCount))
         rq.close()
