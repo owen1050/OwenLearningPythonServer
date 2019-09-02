@@ -3,7 +3,7 @@ import datetime
 from requests import post
 import pytz
 
-url = "http://auto.owenbusler.com"
+url = "http://owenserver.us.to:23654"
 fmt = "%H:%M"
 est = pytz.timezone("US/Eastern") 
 tf = open("bootTimes.txt", "a+")
@@ -35,7 +35,7 @@ while True:
             f = open("timeExec.txt", "w")
             f.write(et)
             f.close()
-           
+            print(com) 
             print(et)
             post(url = url, data = {"content":com})
         else:

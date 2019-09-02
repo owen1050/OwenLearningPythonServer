@@ -17,6 +17,7 @@ def run():
     print("Starting server...")
     server_address = ("", 23655)
     httpd = HTTPServer(server_address, testHTTPServer_RequestHandler)
+    print("server started!")
     httpd.serve_forever()
 
 def monIP():
