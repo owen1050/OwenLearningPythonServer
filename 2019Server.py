@@ -105,7 +105,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             if varToChange == "goodMorning":
                 fileCont = setVar(fileCont, "mainLightOn", 1)
                 fileCont = setVar(fileCont, "hallLightOn", 1)
-                fileCont = setVar(fileCont, "blindMoveAllUp", 1)
+                fileCont = setVar(fileCont, "blindsMoveAllUp", 1)
 
             if varToChange == "goodnight":
                 fileCont = setVar(fileCont, "mainLightOff", 1)
