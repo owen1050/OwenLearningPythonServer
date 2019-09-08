@@ -94,30 +94,42 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             lowVI = highVI+1
             highVI = int(inData.find(";"))
             toValue = int(inData[lowVI:highVI])
+            goodChange = 0;
+            retString = "this multiple change didnt match any on record"
             if varToChange == "bothLights":
                 if toValue == 1:
                     fileCont = setVar(fileCont, "mainLightOn", 1)
                     fileCont = setVar(fileCont, "hallLightOn", 1)
+                    goodChange = 1
+                    retString = "Changed all vars asociated with bothLights on"
                 if toValue == 0:
                     fileCont = setVar(fileCont, "mainLightOff", 1)
                     fileCont = setVar(fileCont, "hallLightOff", 1)
+                    goodChange = 1
+                    retString = "chagned all vars associated with both lights off"
             
             if varToChange == "goodMorning":
                 fileCont = setVar(fileCont, "mainLightOn", 1)
                 fileCont = setVar(fileCont, "hallLightOn", 1)
                 fileCont = setVar(fileCont, "blindsMoveAllUp", 1)
+                goodChange = 1
+                retString = "changed all vars asoc with goodMorning"\
 
             if varToChange == "goodnight":
                 fileCont = setVar(fileCont, "mainLightOff", 1)
                 fileCont = setVar(fileCont, "hallLightOff", 1)
                 fileCont = setVar(fileCont, "blindMoveAllDown", 1)
-            
+                goodChange = 1
+                retString = "chagned all vars from goodnight"
+
             if varToChange == "set_projector":
                 fileCont = setVar(fileCont, "mainLightOff", 1)
                 fileCont = setVar(fileCont, "hallLightOff", 1)
                 fileCont = setVar(fileCont, "blindMoveAllDown", 1)
                 fileCont = setVar(fileCont, "speakerInProj", 1)
                 fileCont = setVar(fileCont, "projectorOn", 1)
+                goodChange = 1
+                retString = "chagned all vars asociated with set_projector"
 
             if varToChange == "set_tv":
                 fileCont = setVar(fileCont, "mainLightOff", 1)
@@ -125,9 +137,10 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
                 fileCont = setVar(fileCont, "blindMoveAllDown", 1)
                 fileCont = setVar(fileCont, "speakerInTV", 1)
                 fileCont = setVar(fileCont, "tvOn", 1)
-      
+                goodChange = 1
+                retString = "changed all vars associated with set tv"
             
-            retString = "Changed all vars asscoiated with " + varToChange
+            
         if "help" in inData:
             h = open("help.txt", "r+")
             retString = h.read()
