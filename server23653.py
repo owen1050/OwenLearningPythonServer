@@ -12,7 +12,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         self.send_header("content-type", "text/plain")
         self.end_headers()
         self.wfile.write("Im always thinking about you".encode())
-        com = "set:hallLightOn=1;
+        com = "set:hallLightOn=1;"
         post(url = url, data = {"content":com})
         
 def run():
