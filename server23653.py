@@ -4,10 +4,14 @@ import os
 import time
 import random
 from requests import post
+from requests import get
 url = "http://owenserver.us.to:23654"
 
 class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
     def do_GET(self):
+        url = "https://maker.ifttt.com/trigger/monitorip/with/key/Bf91G_MsjKUzsWqRs5N7n"
+        get(url=url, params = dict(value1 = "FORTNITE"))        
+        
         self.send_response(200)
         tf = open("diyaWeb","r")
         web = tf.read()
@@ -23,7 +27,7 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
         if r1 == 2:
             self.wfile.write("I cant wait until you are in my arms again".encode())
         com = "set:hallLightOn=1;"
-        post(url = url, data = {"content":com})
+       # post(url = url, data = {"content":com})
         
 def run():
     print("Starting server...")
