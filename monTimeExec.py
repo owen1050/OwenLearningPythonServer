@@ -7,7 +7,7 @@ url = "http://owenserver.us.to:23654"
 fmt = "%H:%M"
 est = pytz.timezone("US/Eastern") 
 tf = open("bootTimes.txt", "a+")
-tf.write(str(datetime.datetime.now()))
+tf.write("\n" + str(datetime.datetime.now()))
 tf.close()
 
 while True:

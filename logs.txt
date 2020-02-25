@@ -28637,3 +28637,705 @@ Request:b'return_if_changed'
 Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
 
 1582589249.8738282
+=============================
+RequestNumber:155030429
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582589717.509674
+=============================
+RequestNumber:155034032
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582590127.959472
+=============================
+RequestNumber:155065239
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582592648.3527765
+=============================
+RequestNumber:155111721
+Request:b'multipleChange:bothLights=0;'
+Returned:chagned all vars associated with both lights off
+1582596163.383195
+=============================
+RequestNumber:155111722
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=1!hallLightOn=0!hallLightOff=1!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582596163.4169645
+=============================
+RequestNumber:155111723
+Request:b'set:mainLightOff=0;'
+Returned:mainLightOff Changed to 0
+1582596163.7365704
+=============================
+RequestNumber:155111724
+Request:b'set:hallLightOff=0;'
+Returned:hallLightOff Changed to 0
+1582596163.7876782
+=============================
+RequestNumber:155111725
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582596163.8602157
+=============================
+RequestNumber:155169923
+Request:b'<<set:hallLightOn=1;>>'
+Returned:hallLightOn Changed to 1
+1582600619.1637394
+=============================
+RequestNumber:155169924
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582600619.1759512
+=============================
+RequestNumber:155169925
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582600619.4964924
+=============================
+RequestNumber:155169926
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582600619.5746453
+=============================
+RequestNumber:155205902
+Request:b'<<multipleChange:bothLights=1;>>'
+Returned:Changed all vars asociated with bothLights on
+1582603393.0897288
+=============================
+RequestNumber:155205903
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582603393.0914106
+=============================
+RequestNumber:155205904
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582603393.4199457
+=============================
+RequestNumber:155205905
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582603393.494094
+=============================
+RequestNumber:155205906
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582603393.8109517
+=============================
+RequestNumber:155205907
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582603393.8911676
+=============================
+RequestNumber:155246439
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582606584.7275212
+=============================
+RequestNumber:155247678
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582606817.1220863
+=============================
+RequestNumber:155253821
+Request:b'return_if_changed'
+Returned:
+1582607275.42295
+=============================
+RequestNumber:155254282
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607309.6396728
+=============================
+RequestNumber:155254283
+Request:b'return_if_changed'
+Returned:11
+1582607309.7021887
+=============================
+RequestNumber:155254395
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607318.0023668
+=============================
+RequestNumber:155254425
+Request:b'multipleChange:bothLights=0;'
+Returned:chagned all vars associated with both lights off
+1582607320.0828705
+=============================
+RequestNumber:155254443
+Request:b'set:blindMoveAllDown=1;'
+Returned:Var not found, adding: blindMoveAllDown
+1582607321.3684394
+=============================
+RequestNumber:155254444
+Request:b'return_if_changed'
+Returned:11!blindMoveAllDown=1!
+1582607321.411882
+=============================
+RequestNumber:155254522
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607337.5165057
+=============================
+RequestNumber:155254563
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607340.5228019
+=============================
+RequestNumber:155254564
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607340.585921
+=============================
+RequestNumber:155254565
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582607340.956158
+=============================
+RequestNumber:155254566
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582607341.0036047
+=============================
+RequestNumber:155254567
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607341.0772214
+=============================
+RequestNumber:155254724
+Request:b'return_if_changed'
+Returned:
+1582607352.6690207
+=============================
+RequestNumber:155254758
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607355.1519334
+=============================
+RequestNumber:155254759
+Request:b'return_if_changed'
+Returned:11
+1582607355.1758904
+=============================
+RequestNumber:155256723
+Request:b'multipleChange:bothLights=0;'
+Returned:chagned all vars associated with both lights off
+1582607528.1217124
+=============================
+RequestNumber:155256949
+Request:b'sudo_reset'
+Returned:reset data to default
+1582607544.8536594
+=============================
+RequestNumber:155256950
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607544.911916
+=============================
+RequestNumber:155256977
+Request:b'multipleChange:bothLights=0;'
+Returned:chagned all vars associated with both lights off
+1582607546.9267528
+=============================
+RequestNumber:155256978
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=1!hallLightOn=0!hallLightOff=1!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607546.9473991
+=============================
+RequestNumber:155256979
+Request:b'set:mainLightOff=0;'
+Returned:mainLightOff Changed to 0
+1582607547.2829294
+=============================
+RequestNumber:155256980
+Request:b'set:hallLightOff=0;'
+Returned:hallLightOff Changed to 0
+1582607547.331478
+=============================
+RequestNumber:155256981
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607547.4031339
+=============================
+RequestNumber:155257039
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607551.6862197
+=============================
+RequestNumber:155257040
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607551.729039
+=============================
+RequestNumber:155257041
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582607552.246863
+=============================
+RequestNumber:155257042
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582607552.2940652
+=============================
+RequestNumber:155257043
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607552.367553
+=============================
+RequestNumber:155257089
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607555.7939394
+=============================
+RequestNumber:155257090
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607555.823998
+=============================
+RequestNumber:155257091
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582607556.0237558
+=============================
+RequestNumber:155257092
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582607556.3284009
+=============================
+RequestNumber:155257093
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582607556.376086
+=============================
+RequestNumber:155257094
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607556.450472
+=============================
+RequestNumber:155257111
+Request:b'set:mainLightOn=1;'
+Returned:mainLightOn Changed to 1
+1582607557.7202218
+=============================
+RequestNumber:155257112
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607557.736144
+=============================
+RequestNumber:155257113
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582607558.059071
+=============================
+RequestNumber:155257114
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607558.133451
+=============================
+RequestNumber:155257334
+Request:b'return_if_changed'
+Returned:
+1582607574.4028475
+=============================
+RequestNumber:155257381
+Request:b'set:mainLightOn=1;'
+Returned:Var not found, adding: mainLightOn
+1582607577.875345
+=============================
+RequestNumber:155257382
+Request:b'return_if_changed'
+Returned:!mainLightOn=1!
+1582607577.8863032
+=============================
+RequestNumber:155257400
+Request:b'sudo_reset'
+Returned:reset data to default
+1582607579.205602
+=============================
+RequestNumber:155257401
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607579.2206113
+=============================
+RequestNumber:155257416
+Request:b'set:mainLightOn=1;'
+Returned:mainLightOn Changed to 1
+1582607580.2967622
+=============================
+RequestNumber:155257417
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607580.358176
+=============================
+RequestNumber:155257418
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582607580.6745267
+=============================
+RequestNumber:155257419
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607580.7498286
+=============================
+RequestNumber:155257518
+Request:b'return_if_changed'
+Returned:
+1582607588.0368044
+=============================
+RequestNumber:155257559
+Request:b'sudo_reset'
+Returned:reset data to default
+1582607591.057591
+=============================
+RequestNumber:155257560
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607591.0745063
+=============================
+RequestNumber:155257577
+Request:b'return_if_changed'
+Returned:
+1582607592.2951274
+=============================
+RequestNumber:155257782
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582607694.0440738
+=============================
+RequestNumber:155257916
+Request:b'return_if_changed'
+Returned:
+1582607703.9253137
+=============================
+RequestNumber:155258305
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608015.7854903
+=============================
+RequestNumber:155258409
+Request:b'11\r\nreturn_if_cha'
+Returned:No Action
+1582608023.4735186
+=============================
+RequestNumber:155258440
+Request:b'11\r\nreturn_if_cha'
+Returned:No Action
+1582608025.7242038
+=============================
+RequestNumber:155258524
+Request:b'11\r\nreturn_if_cha'
+Returned:No Action
+1582608031.8882065
+=============================
+RequestNumber:155258547
+Request:b'11\r\nreturn_if_cha'
+Returned:No Action
+1582608033.5241196
+=============================
+RequestNumber:155261446
+Request:b'set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608248.2858922
+=============================
+RequestNumber:155261447
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608248.3022711
+=============================
+RequestNumber:155261448
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608248.7875192
+=============================
+RequestNumber:155261449
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608248.8613794
+=============================
+RequestNumber:155262234
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608307.046846
+=============================
+RequestNumber:155262235
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608307.112319
+=============================
+RequestNumber:155262236
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608307.6259599
+=============================
+RequestNumber:155262237
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608307.7010937
+=============================
+RequestNumber:155262405
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608324.1412241
+=============================
+RequestNumber:155262406
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608324.1432226
+=============================
+RequestNumber:155262407
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608324.1449246
+=============================
+RequestNumber:155262583
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608343.8176382
+=============================
+RequestNumber:155262584
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608343.8195744
+=============================
+RequestNumber:155263029
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608399.3339236
+=============================
+RequestNumber:155263035
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608399.3464918
+=============================
+RequestNumber:155263234
+Request:b'set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608414.4001274
+=============================
+RequestNumber:155263270
+Request:b'sudo_reset'
+Returned:reset data to default
+1582608416.9996798
+=============================
+RequestNumber:155263271
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608417.0035908
+=============================
+RequestNumber:155263307
+Request:b'set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608419.6609359
+=============================
+RequestNumber:155263308
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608419.6991234
+=============================
+RequestNumber:155263309
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608420.049589
+=============================
+RequestNumber:155263310
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608420.1235042
+=============================
+RequestNumber:155263322
+Request:b'set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608421.0345652
+=============================
+RequestNumber:155263323
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608421.0400577
+=============================
+RequestNumber:155263324
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608421.4641392
+=============================
+RequestNumber:155263325
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608421.5386128
+=============================
+RequestNumber:155263536
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608437.1801865
+=============================
+RequestNumber:155263537
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608437.2375555
+=============================
+RequestNumber:155263538
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608437.538794
+=============================
+RequestNumber:155263539
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608437.6127546
+=============================
+RequestNumber:155267926
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608763.1844945
+=============================
+RequestNumber:155267927
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608763.247148
+=============================
+RequestNumber:155267928
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608763.6912422
+=============================
+RequestNumber:155267929
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608763.7664516
+=============================
+RequestNumber:155268013
+Request:b'sudo_reset'
+Returned:reset data to default
+1582608769.9733865
+=============================
+RequestNumber:155268043
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608772.1522384
+=============================
+RequestNumber:155268044
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608772.1671638
+=============================
+RequestNumber:155268045
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608772.6123288
+=============================
+RequestNumber:155268046
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608772.6857085
+=============================
+RequestNumber:155268089
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608775.892532
+=============================
+RequestNumber:155268090
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608775.9061542
+=============================
+RequestNumber:155268091
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608776.317524
+=============================
+RequestNumber:155268092
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608776.3917713
+=============================
+RequestNumber:155268421
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608800.795105
+=============================
+RequestNumber:155268422
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608800.799503
+=============================
+RequestNumber:155268423
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608801.2434335
+=============================
+RequestNumber:155268424
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608801.317971
+=============================
+RequestNumber:155268454
+Request:b'button+name1=set:speakerMute=1;'
+Returned:speakerMute Changed to 1
+1582608803.5043788
+=============================
+RequestNumber:155268455
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=1!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608803.5686026
+=============================
+RequestNumber:155268456
+Request:b'set:speakerMute=0;'
+Returned:speakerMute Changed to 0
+1582608803.9658546
+=============================
+RequestNumber:155268457
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608804.039063

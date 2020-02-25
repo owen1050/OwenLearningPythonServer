@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<style>
+
+.hide { position:absolute; top:-1px; left:-1px;width:1px; height:1px}
+
+.button{
+	background-color: #0706EF;
+	border : 10px;
+	color: white;
+	width: 45%;
+	height: 100px;
+	margin: 10px 10px;
+	font-size: 20px;
+}
+</style>
+</head>
+
+<iframe name = "hidden" class = "hide"></iframe>
+
+<body>
+		
+	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
+		<button class = "button"  name = "button name1" value = "set:speakerMute=1;">Button 1</button>
+	</form>
+
+	<form action = "" method="get">
+		<button class = "button"  name = "button name2" value = "button value2">Button 2</button>
+	</form>
+	
+	<form action = "" method="get">
+		<button class = "button" name = "button name3" value = "button value3">Button3</button>
+	</form>
+</body>
+</html>
+
