@@ -26,12 +26,13 @@ def monIP():
     get(url=url, params = dict(value1 = "Computer booted up"))
     while True:
         ip = get('https://api.ipify.org').text
+        print(ip)
         if ip == oldIp:
             pass
         else:
             print(ip)
             params = dict(value1=str(ip))
-            resp = get(url = uel, params = params)
+            resp = get(url = url, params = params)
             oldIp = ip
         time.sleep(10)
     
