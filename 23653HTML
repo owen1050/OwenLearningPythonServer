@@ -21,18 +21,25 @@
 <iframe name = "hidden" class = "hide"></iframe>
 
 <body>
-		
+	
+	<h1>With great power comes great responsibility</h1>
+
 	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
-		<button class = "button"  name = "button name1" value = "set:speakerMute=1;">Button 1</button>
+		<button class = "button"  name = "button name1" value = "multipleChange:bothLights=1;">Lights On</button>
 	</form>
 
-	<form action = "" method="get">
-		<button class = "button"  name = "button name2" value = "button value2">Button 2</button>
+	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
+		<button class = "button"  name = "button name1" value = "multipleChange:bothLights=0;">Lights Off</button>
 	</form>
-	
-	<form action = "" method="get">
-		<button class = "button" name = "button name3" value = "button value3">Button3</button>
+
+	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
+		<button class = "button"  name = "button name1" value = "set:blindMoveAllUp=1;">Open Blinds</button>
 	</form>
+
+	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
+		<button class = "button"  name = "button name1" value = "set:blindMoveAllDown=1;">Close Blinds</button>
+	</form>
+
 </body>
 </html>
 
