@@ -29339,3 +29339,152 @@ Request:b'return_if_changed'
 Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
 
 1582608804.039063
+=============================
+RequestNumber:155270178
+Request:b'multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582608931.8587399
+=============================
+RequestNumber:155270179
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608931.925848
+=============================
+RequestNumber:155270180
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582608932.2958484
+=============================
+RequestNumber:155270181
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582608932.3427126
+=============================
+RequestNumber:155270182
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582608932.4175072
+=============================
+RequestNumber:155270489
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609096.63079
+=============================
+RequestNumber:155273196
+Request:b'button+name1=multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582609298.142116
+=============================
+RequestNumber:155273197
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=1!mainLightOff=0!hallLightOn=1!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609298.1443133
+=============================
+RequestNumber:155273198
+Request:b'set:mainLightOn=0;'
+Returned:mainLightOn Changed to 0
+1582609298.499343
+=============================
+RequestNumber:155273199
+Request:b'set:hallLightOn=0;'
+Returned:hallLightOn Changed to 0
+1582609298.5468657
+=============================
+RequestNumber:155273200
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609298.6204169
+=============================
+RequestNumber:155273247
+Request:b'button+name1=set:blindMoveAllDown=1;'
+Returned:blindMoveAllDown Changed to 1
+1582609302.095838
+=============================
+RequestNumber:155273248
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=1!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609302.1304104
+=============================
+RequestNumber:155273249
+Request:b'set:blindMoveAllDown=0;'
+Returned:blindMoveAllDown Changed to 0
+1582609302.2042637
+=============================
+RequestNumber:155273250
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609302.2791903
+=============================
+RequestNumber:155273292
+Request:b'button+name1=set:blindMoveAllUp=1;'
+Returned:Var not found, adding: blindMoveAllUp
+1582609305.4979503
+=============================
+RequestNumber:155273293
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+!blindMoveAllUp=1!
+1582609305.5399518
+=============================
+RequestNumber:155273561
+Request:b'button+name1=set:blindMoveAllUp=1;'
+Returned:blindMoveAllUp Changed to 1
+1582609328.8964407
+=============================
+RequestNumber:155273562
+Request:b'sudo_reset'
+Returned:reset data to default
+1582609336.134846
+=============================
+RequestNumber:155273563
+Request:b'button+name1=multipleChange:bothLights=1;'
+Returned:Changed all vars asociated with bothLights on
+1582609337.7059762
+=============================
+RequestNumber:155273564
+Request:b'button+name1=multipleChange:bothLights=0;'
+Returned:chagned all vars associated with both lights off
+1582609339.6540356
+=============================
+RequestNumber:155273565
+Request:b'button+name1=set:blindMoveAllUp=1;'
+Returned:Var not found, adding: blindMoveAllUp
+1582609341.2235785
+=============================
+RequestNumber:155273566
+Request:b'sudo_reset'
+Returned:reset data to default
+1582609346.4963212
+=============================
+RequestNumber:155273567
+Request:b'set:blindsMoveAllUp=1;'
+Returned:blindsMoveAllUp Changed to 1
+1582609349.8417175
+=============================
+RequestNumber:155273568
+Request:b'sudo_reset'
+Returned:reset data to default
+1582609371.0637186
+=============================
+RequestNumber:155273569
+Request:b'button+name1=set:blindsMoveAllUp=1;'
+Returned:blindsMoveAllUp Changed to 1
+1582609373.1904058
+=============================
+RequestNumber:155273570
+Request:b'sudo_reset'
+Returned:reset data to default
+1582609375.882473
+=============================
+RequestNumber:155273571
+Request:b'return_if_changed'
+Returned:!blindsMoveAllUp=0!blindMoveAllDown=0!blindMovePUp=0!blindMovePDown=0!mainLightOn=0!mainLightOff=0!hallLightOn=0!hallLightOff=0!projectorOn=0!projectorOff=0!tvOn=0!tvOff=0!tvInComp=0!tvInChrome=0!projInComp=0!projInChrome=0!speakerMute=0!speakerInProj=0!speeakerInTV=0!speakerInPhono=0!speakerInChrome=0!speakerVolumeUp=0!speakerVolumeDown=0!
+
+1582609390.4929767

@@ -33,7 +33,7 @@
 	</form>
 
 	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
-		<button class = "button"  name = "button name1" value = "set:blindMoveAllUp=1;">Open Blinds</button>
+		<button class = "button"  name = "button name1" value = "set:blindsMoveAllUp=1;">Open Blinds</button>
 	</form>
 
 	<form action = "http://100.35.205.75:23654" method="post" target = "hidden">
